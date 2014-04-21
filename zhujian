@@ -1,0 +1,648 @@
+<!doctype html>
+  <html>
+    <head>
+    	<meta charset="utf-8"/>
+    	  <!--移动设备优先-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--就用缩放-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    	<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+      <link href="css/docs.css" rel="stylesheet" type="text/css"/>
+        <!--尽量使用最新的jquery版本-->
+    	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/application.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".scroll">
+      <div class="container">
+    	  <h2>使用图标</h2>
+    	  <p>一套免费的图标由glyphicons.com，独立使用
+    	  </p>
+    	  <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-star">Star</span>
+        </button>
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-arrow-up">up</span>
+        </button>
+    	  <h2>下拉菜单</h2>
+        <blockquote>
+          <h3>注意事项<h3>
+          <p class="text-warning">1.必须引入正确的jquery插件</p>
+          <h3>使用方法</h3>
+          <p class="text-info">按钮中添加<code>data-toggle="dropdown"</code>可以打开或关闭下拉菜单。<span class="text-danger">(首选)</span></p>
+          <p>兄弟元素ul中添加<code>dropdown-menu</code>类</p>
+
+        </blockquote>
+        <div class="dropdown">
+          <button  type="button" class="btn btn-default" data-toggle="dropdown">
+            Dropdown <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-left" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Action</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Action</a></li>
+            <li class="disabled"><a href="#" >Action</a></li>
+            <li><a href="#">Action</a></li>
+          </ul>
+        </div>
+        <h3>对齐选项</h3>
+        <p>往<code>ul</code>中添加<code>pull-right/left</code>来控制对齐方向</p>
+        <h3>禁用的选项卡</h3>
+        <p>与之前的方法一致添加<code>disabled</code>即可</p>
+        <h2>按钮</h2>
+        <h3>按钮加载效果</h3>
+        <button type="button" data-loading-text="正在加载..." autocomplete="off" class="btn btn-primary" >loading state</button>
+        <h3>按钮组</h3>
+        <p>改变按钮组的大小<code>btn-group-xs/sm/md/lg</code></p>
+        <p>添加<code>dropdown-toggle</code>类,可以切换状态</p>
+        <div class="btn-toolbar" role="toolbar">
+          <div class="btn-group btn-group-lg">
+            <button class="btn btn-default">left</button>
+            <button class="btn btn-default">middle</button>
+            <button class="btn btn-default">right</button>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-default">left</button>
+            <button class="btn btn-default">middle</button>
+            <button class="btn btn-default">right</button>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-default">left</button>
+            <button class="btn btn-default">middle</button>
+            <button class="btn btn-default">right</button>
+          </div>
+        </div>
+        <h3>竖直列表按钮</h3>
+        <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group btn-group-sm btn-group-vertical">
+            <button class="btn btn-default">left</button>
+            <button class="btn btn-default">middle</button>
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">right<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">menu1</a></li>
+              <li><a href="#">menu1</a></li>
+              <li><a href="#">menu1</a></li>
+            </ul>
+          </div>
+        </div>
+        <h3>多选按钮主</h3>
+        <div class="btn-group" data-toggle="buttons">
+          <button class="btn btn-primary">left</button>
+          <button class="btn btn-primary">middle</button>
+        </div>
+        <h3>单选式按钮</h3>
+        <div class="dropdown">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default" data-toggle="dropdown">
+              default
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">default</a></li>
+              <li><a href="#">default</a></li>
+              <li><a href="#">default</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-default text-primary" data-toggle="dropdown">
+              primary
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">primary</a></li>
+              <li><a href="#">primary</a></li>
+              <li><a href="#">primary</a></li>
+            </ul>
+          </div>
+        </div>
+        <h3>分裂式按钮</h3>
+        <p>只要给父元素添加<code>dropup</code>类则下拉菜单显示在元素上方</p>
+        <div class="btn-group dropup">
+          <button class="btn btn-default">dropup</button>
+          <button class="btn btn-default" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">dropup</a></li>
+            <li><a href="#">dropup</a></li>
+            <li><a href="#">dropup</a></li>
+          </ul>
+        </div>
+        <h2>输入框组</h2>
+        <blockquote>
+          <h3>跨浏览器兼容</h3>
+          <p class="text-danger">避免使用&lt;select&gt;元素</p>
+          <p>一般用于单个表单不要和<code>form-group</code>使用</p>
+        </blockquote>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
+              <input type="text" class="form-control" placeholder="username"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon glyphicon glyphicon-earphone"></span>
+              <input type="phone" class="form-control" placeholder="telepone"/>
+            </div>
+          </div>
+        </div>
+        <h2>滚动监听</h2>
+        <blockquote>
+          <h3>使用data属性</h3>
+          <p>监听滚动需要在<code>&lt;body&gt;</code>里面添加<code>data-spy="scroll"</code></p>
+          <p>被监听的对象导航栏的链接地址必须有对应<code>ID</code></p>
+        </blockquote>
+        <div class="scroll">
+            <ul class="nav">
+                  <li><a href="#nva1" >nva1</a></li>
+                  <li><a href="#nva2">nva2</a></li>
+                  <li><a href="#nva3" >nva3</a></li>
+            </ul>
+        </div>
+        <div class="scroll-content" style="height:300px; overflow:scroll">
+          <div id="nva1">
+            <h2>第1段内容</h2>
+            <p>
+              第一段内容第一段内容第一段内容第一段内容第一段内容第一段内容
+              Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+              Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+              Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+            </p>
+          </div>
+          <div id="nva2">
+            <h2>第2段内容</h2>
+            <p>第一段内容第一段内容第一段内容第一段内容第一段内容第一段内容
+            Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+          Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            </div>
+            <div id="nva3">
+              <h2>第3段内容</h2>
+              <p>第一段内容第一段内容第一段内容第一段内容第一段内容第一段内容
+              Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+              Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+              </p>
+            </div>
+          </div>
+        <h2>标签页</h2>
+        <blockquote>
+          <h3>注意事项</h3>
+          <p>
+            需要往选项卡元素中添加<code>data-toggle="tab"或者data-toggle="pill"</code>
+            根据链接地址监听
+          </p>
+          <p>添加<code>nav-justified</code>即可使标签两端对齐</p>
+        </blockquote>
+        <h3>tabs标签式</h3>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li><a href="#home" data-toggle="tab">home</a></li>
+          <li class="disabled"><a href="#profile" data-toggle="tab">profile</a></li>
+          <li><a href="#messages" data-toggle="tab">messages</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            homehomehomehomehomehomehomehome
+            homehomehomehomehomehomehomehome
+            homehomehomehomehomehomehomehome
+          </div>
+          <div class="tab-pane" id="profile">
+            profileprofileprofileprofileprofile
+            profileprofileprofileprofileprofile
+            profileprofileprofileprofileprofile
+          </div>
+          <div class="tab-pane" id="messages">
+            messagesmessagesmessagesmessagesmessages
+            messagesmessagesmessagesmessagesmessages
+          </div>
+        </div>
+        <h3>pills胶囊式</h3>
+         <!-- Nav pills -->
+        <ul class="nav nav-pills">
+          <li><a href="#pills1" data-toggle="tab">pills1</a></li>
+          <li><a href="#pills2" data-toggle="tab">pills2</a></li>
+          <li><a href="#pills3" data-toggle="tab">pills3</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="pills1">
+            pill1pill1pill1pill1pill1pill1
+          </div>
+          <div class="tab-pane" id="pills2">
+            pills2pills2pills2pills2pills2pills2
+          </div>
+          <div class="tab-pane" id="pills3">
+            pills3pills3pills3pills3pills3
+          </div>
+        </div>
+        <h2>工具提示</h2>
+        <blockquote>
+          <h3>注意事项</h3>
+          <p>需要自己初始化api</p>
+          <p>往标签中添加<code>data-toggle="tooltip"</code>属性</p>
+          <p>利用<code>data-placement="top/down/left/right"</code>属性来控制显示的方向</p>
+          <p>直接书写<code>title</code>提示语即可或者title为空用<code>data-original-title</code>来显示提示语</p>
+        </blockquote>
+        <button class="btn btn-default" trigger="hover" title="tooltip to left" data-placement="top" 
+          data-toggle="tooltip" type="button">
+            左侧Tooltip
+        </button>
+        <h2>弹出框</h2>
+        <blockquote>
+          <h3>必须初始化才有效果</h3>
+          <p>在标签中加入<code>data-toggle="popover"</code></p>
+          <p><code>data-content</code>表示显示的内容<code>data-original-title</code>表示显示的标题</p>
+        </blockquote>
+        <div class="bs-popover">
+          <button type="button" class="btn btn-lg btn-danger" data-content="And here's some amazing content. It's very engaging. right?" title="" data-toggle="popover" data-placement="top" data-original-title="A Title">
+           Click to toggle popover
+         </button>
+        </div>
+        <h2>警告框</h2>
+        <blockquote>
+          <h3>在子标签中添加一个按钮标签<code>class="close"</code></h3>
+          <p>在button标签中添加<code>data-dismiss="alert"</code></p>
+        </blockquote>
+        <div class="alert alert-warning fade in">
+          <button class="close" aria-hidden="true" data-dismiss="alert" type="button">
+            x
+          </button>
+          每天不学习你就落后很多！
+        </div>
+        <div class="alert alert-danger fade in">
+          <button class="close" data-dismiss="alert">x</button>
+          warning 
+        </div>
+        <h2>手风琴</h2>
+        <p>为了给一组可折叠页面元素添加控制器，添加<code>data-parent="#selector"</code>即可</p>
+        <div id="accordion" class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-one">Collapsible Group Item #1 </a>
+              </h4>
+            </div>
+            <div id="panel-one" class="panel-collapse collapse in">
+              <div class="panel-body" >
+                panel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-headingpanel-heading
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#panel-two" data-parent="#accordion" data-toggle="collapse">Collapsible Group Item #2 </a>
+                </h4>
+              </div>
+            <div id="panel-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                panel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-twopanel-two
+              </div>
+            </div>
+           </div> 
+          </div>
+          <h2>轮播</h2>
+          <div class="bs-example">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/index.png"/>
+                  <div class="carousel-caption">
+                    <h3>第一幅</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/index.png"/>
+                  <div class="carousel-caption">
+                    <h3>第二幅</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/index.png"/>
+                  <div class="carousel-caption">
+                    <h3>第二幅</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+        <h2>Affix</h2>
+        <div class="affix-bottom" data-spy="affix-bottom" data-offset-bottom="100">
+          <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+          </ul>
+        </div>
+        <h2>导航条</h2>
+        <blockquote>
+          <h3>凡是导航条的元素都要加上<code>navbar-标签名</code>这样才能对齐</h3>
+          <p><code>navbar-left/right</code>来控制元素的位置</p>
+          <p><code>navbar-header</code>来表示网站标识</p>
+          <p><code>collapse</code>的作用于使标签两边有间距</p>
+
+        </blockquote>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+              <span class="sr-only">Toggle-navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <a href="#" class="navbar-brand">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown">dropdown<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">action</a></li>
+                  <li><a href="#">action</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">action</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">link</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="search" />
+              </div>
+              <button class="btn btn-default">submit</button>
+            </form>
+            
+          </div>
+        </nav>
+        <h3>非导航的链接</h3>
+        <p>使用<code>navbar-link</code>类来显示为标准链接</p>
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+            </ul>
+            <p class="navbar-text navbar-right"><a href="#" class="navbar-link">text-link</a></p>
+
+          </div>
+          </nav>
+          <h3>文本</h3>
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <a href="#" class="navbar-brand">brand</a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <p class="navbar-text navbar-right">this is a text</p>
+             </div>
+          </nav>
+          <h3>导航栏置顶</h3>
+          <p>给nav标签加入<code>navbar-fixed-top</code>即可</p>
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+               <a href="#" class="navbar-brand">brand</a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">link</a></li>
+              </ul>
+            </div>
+          </nav>
+          <h3>反色导航栏</h3>
+          <p>加上<code>navbar-inverse</code></p>
+          <nav class="navbar  navbar-inverse" role="navigation">
+            <div class="navbar-header">
+              <a class="navbar-brand">brand</a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                 <li><a href="#">link</a></li>
+              </ul>
+            </div>
+          </nav>
+          <h2>面包屑导航</h2>
+          <blockquote>
+            <h3>使用<code>breadcrumb</code>
+          </blockquote>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">iphone</a></li>
+            <li class="active">iphone5s</li>
+          </ol>
+          <h3>分页</h3>
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+          <h3>翻页</h3>
+          <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+          <h3>对齐翻页</h3>
+          <ul class="pager">
+            <li class="previous"><a href="#">&larr;previous</a></li>
+            <li class="next"><a href="#">next&rarr;</a></li>
+          </ul>
+          <h3>可变的变体</h3>
+          <span class="label label-default">default</span>
+          <span class="label label-primary">primary</span>
+          <span class="label label-success">success</span>
+          <span class="label label-info">info</span>
+          <span class="label label-warning">warning</span>
+          <span class="label label-danger">danger</span>
+          <h2>微章</h2>
+          <a href="#">read <span class="badge">52</span></a>
+          <h3>未读显示读完隐藏的标识</h3>
+          <a href="#">Message<span class="badge">5</span></a>
+          <h3>大屏幕介绍</h3>
+          <p>轻量，灵活的可选组件，扩展整个视角，展示您站点上的关键内容。要让大屏幕介绍是屏幕宽度，请别把它包括在<code>.container</code>。</p>
+          <div class="jumbotron">
+            <h1>Hello World !</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <button class="btn btn-primary btn-lg" type="button">Learn More</button>
+          </div>
+          <h3>默认案例</h3>
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+                <img src="img/171x180.png" />
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+                <img src="img/171x180.png" />
+              </a>
+            </div>
+             <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+                <img src="img/171x180.png" />
+              </a>
+            </div>
+             <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail">
+                <img src="img/171x180.png" />
+              </a>
+            </div>
+          </div>
+          <h2>警告框</h2>
+          <p>使用<code>alert alert-danger/warning/success/info</code></p>
+          <p>警告框中的链接可用<code>alert-link</code></p>
+          <div class="alert alert-danger">
+            <p>alert-danger</p>
+          </div>
+          <div class="alert alert-warning">
+            <p>alert-warning</p>
+          </div>
+          <div class="alert alert-success">
+            <p>alert-success</p>
+          </div>
+          <h2>进度条</h2>
+          <p><code>progress</code>表示进度条</p>
+          <p><code>progress-striped</code>表条纹式进度条<code>active</code>表示运动的进度条</p>
+          <div class="progress progress-striped active">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+            </div>
+          </div>
+          <h2>媒体对象</h2>
+          <p>父标签为<code>media</code></p>
+          <p>图像元素添加<code>pull-left/right来控制方向</code></p>
+          <div class="media">
+            <a href="#" class="pull-left">
+              <img src="img/64x64.png"/>
+            </a>
+            <div class="media-body">
+              <h4>hello</h4>
+              <p>nihaohsdjhadhuasdhfuhase</p>
+              <div class="media">
+                <a href="#" class="pull-left">
+                  <img src="img/64x64.png"/>
+                </a>
+                <div class="media-body">
+                  <h4>hello</h4>
+                  <p>nihaohsdjhadhuasdhfuhase</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <a href="#" class="pull-left">
+              <img src="img/64x64.png"/>
+            </a>
+            <div class="media-body">
+              <h4>hello</h4>
+              <p>nihaohsdjhadhuasdhfuhase</p>
+            </div>
+          </div>
+          <h2>列表组</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#" class="active">menu1</a><span class="badge">52</span></li>
+            <li class="list-group-item"><a href="#">menu1</a><span class="badge">22</span></li>
+            <li class="list-group-item"><a href="#">menu1</a></li>
+          </ul>
+          <h2>面板组</h2>
+          <div class="panel panel-default">
+            <div class="panel-body">hello</div>
+          </div>
+          <h3>带标题的面板</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              panel title
+            </div>
+            <div class="panel-body">
+              panel-body
+            </div>
+          </div>
+          <h3>有意义的面板</h3>
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+                danger
+            </div>
+            <div class="panel-body">
+              danger body
+            </div>
+          </div>
+          <h3>带表格的面板</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Panel-heading
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>lee</td>
+                  <td>24</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>带列表组的面板</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Panel-heading
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">item1</li>
+              <li class="list-group-item">item2</li>
+            </ul>
+          </div>
+          <h2>well</h2>
+          <p>同样可以使用<code>well-lg/md/sm/xs</code>控制大小</p>
+          <div class="well">well</div>
+          <h2>layout</h2>
+          <section id="layouts">
+            <div class="mini-layout fluid">
+              <div class="mini-layout-sidebar"></div>
+              <div class="mini-layout-body"></div>
+            </div>
+          </section>
+          <div>
+            <div class="row the-icons">
+              <div class="span3">
+                <a href="#"><i class="icon-compass"></i>icon-compass</a>
+              </div>
+            </div>
+            
+          </div>
+          <a href="#" class="m-btn red">Color Red</a>
+        </div>
+    </body>
+  </html>
