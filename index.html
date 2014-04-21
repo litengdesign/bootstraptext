@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="ch-cn">
+ <head>
+  <meta charset="utf-8"/>
+  <!--移动设备优先-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--就用缩放-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <script src="js/bootstrap.js">
+  </script>
+ 	</head>
+ 	<body>
+ 	  <!--
+ 	    1. .img-responsive图片相应
+ 	    2. .container内容居中
+ 	    3. 栅格系统的row必须在container中
+ 	    @media (min-width: @screen-sm-min) { ... }
+ 	-->
+ 	  
+ 	  <div class="container">
+ 	  	<h2>排版</h2>
+ 	  	<div>
+          <h1>hello word !</h1>
+          <h2>hello word !</h2>
+          <h3>hello word !</h3>
+          <h4>hello word !</h4>
+      </div>
+      <h1>栅格化系统</h1>
+       <div class="row">
+       	  <div class="col-md-1 col-xs-4">col-md-1 </div> 
+          <div class="col-md-1 col-xs-4 col-md-offset-4">
+          col-md-offset-4</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>
+          <div class="col-md-1 col-xs-4">.col-md-1</div>          
+       </div>
+      
+    </div>  
+     <div class="container">
+       	  <div class="col-xs-12 col-md-9">
+       	  	<!--内嵌式-->
+            <div class="row">
+       	  	  <div class="col-md-1">
+                col-md-1
+              </div>
+               <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+              <div class="col-md-1">
+                col-md-1
+              </div>
+       	  </div>  
+       	  <!--列排序
+       	   1.push往后拉
+       	   2.pull往前推
+       	-->
+
+       	  <div class="container">
+       	    <div class="row">
+       	  	  <div class="col-md-9 col-md-push-3">
+       	  		  col-md-pus-9
+       	      </div> 
+       	      <div class="col-md-3 col-md-pull-9">
+       	  		col-md-pus-3
+       	      </div> 
+       	  </div>
+       	</div>
+       	<!--两列布局-->
+       	<div class="wrapper">
+       		<div class="content-main">
+       			content-main
+            <h2>强调class</h2>
+            <p>使用<code>.lead</code>来突出</p>
+       			<p class="lead">lead突出主体</p>
+       			<p>正常字体
+            <p class="lead">
+              使用标签<code>&lt;strong&gt;</code>给字体加粗</p>
+       				<strong>加粗字体</strong>
+              <p>
+              使用标签<code>&lt;small&gt;</code>给字体变小</p>
+       				<small>正常字体</small>
+             <p>
+              使用标签<code>&lt;em&gt;</code>使字体斜体</p>
+       				<em>斜体</em>
+       			</p>
+       		  <h2>class强调链接</h2>
+
+       			<p class="text-muted"><code>.text-muted</code>表示普通的文字</p>
+                <p class="text-primary"><code>.text-primary</code>表示基本的文字</p>
+                <p class="text-success"><code>.text-success</code>表示成就的文字</p>
+                <p class="text-info"><code>.text-info</code>表示信息的文字</p>
+                <p class="text-warning"><code>text-warning</code>表示提示的文字</p>
+                <p class="text-danger"><code>text-danger</code>表示警告的文字</p>
+                <!--abbr 基本的缩略语 但是要包含title
+                   1.添加initialism可以设置文本更小
+                -->
+                <p><abbr title="这是一个缩略语"><code>abbr</code>what's</abbr></p>
+                <p><abbr title="Hyper Text Makeup language" class="initialism"><code>.initialism</code>使文本更小HTML</abbr>是超文本标记语言</p>
+                <p class="initialism">HTML IS HYPER TEXT MAKEUP LANGUAGE</p>
+                <h2>地址</h2>
+                <p>
+                	<address>
+                		<strong>上海林频</strong><br>
+                		上海市闵行开发区<br>
+                		<abbr title="Phone">p:</abbr>25154515454<br>
+                		<a href="mailto:#">info@linpin.com</a>
+                	</address>
+                </p>
+
+                <h2>异常处理</h2>
+                <p>Dealing with specificity this span is a speaks<span></p>
+                <!--引用内容
+                  1.来源用small标签
+                  2.来自用cite标签
+                  3.另一种引用方式在blockquote添加类pull-right
+            -->
+            <h2>引用</h2>
+            <p>使用<code>&lt;blockquote&gt;</code>标签来引用区块
+                <blockquote>
+                	<p>Lorem ipsum dolor sit amet, 
+                	consectetur adipiscing elit. Integer posuere erat a ante.
+                	<small>Someone famous in <cite title="souce title">Source Title</cite></small>
+                    </p>
+                </blockquote>
+                <blockquote class="pull-right">
+                	<p>Lorem ipsum dolor sit amet, 
+                	consectetur adipiscing elit. Integer posuere erat a ante.
+                	<small>Someone famous in <cite title="souce title">Source Title</cite></small>
+                    </p>
+                </blockquote>
+                <h2>无序列表</h2>
+                <ul>
+                	<li>无序列表</li>
+                	<li>无序列表</li>
+                	<li>无序列表</li>
+                	<li>无序列表</li>
+                	<li>无序列表
+                		<ul>
+                			<li>内嵌列表</li>
+                	        <li>内嵌列表</li>
+                	        <li>内嵌列表</li>
+                	        <li>内嵌列表</li>
+                		</ul>
+                	</li>
+                </ul>
+                <h2>有序列表</h2>
+                <ol>
+                	<li>有序列表</li>
+                	<li>有序列表</li>
+                	<li>有序列表</li>
+                	<li>有序列表</li>
+                	<li>有序列表</li>
+                	<li>有序内嵌
+                        <ol>
+                        	<li>有序内嵌</li>
+                        	<li>有序内嵌</li>
+                        	<li>有序内嵌</li>
+                        	<li>有序内嵌</li>
+                        	<li>有序内嵌</li>
+                        	<li>有序内嵌</li>
+                        </ol>
+                	</li>
+                </ol>
+            <h2>无样式列表</h2>
+            <p>1.添加类list-unstyled</p>
+             <div>
+                <ul class="list-unstyled">
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                </ul>
+                <ul>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                </ul>
+                <ul>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                	<li>无样式列表</li>
+                </ul>
+             </div>
+             <h2>内联列表</h2>
+             <!--内联列表
+                 1.添加类list-inline
+                 2.display:inline-block内联元素：元素前后没有换行符。
+         -->
+             <ul class="list-inline">
+             	<li>内联列表</li>
+             	<li>内联列表</li>
+             	<li>内联列表</li>
+             </ul>
+             <!--描述-->
+             <h2>描述</h2>
+             <dl>
+             	<dt>描述</dt>
+             	<dd>带有描述的短语列表。</dd>
+             	<dt>HTML</dt>
+             	<dd>Hyper Text Makeup Language</dd>
+             </dl>
+             <h2>水平描述</h2>
+             <dl class="dl-horizontal">
+             	<dt>水平描述</dt>
+             	<dd>指描述主体与描述语并列</dd>
+             </dl>
+             <h2>自动截断</h2>
+             <p class="text-overflow">
+             	通过text-overflow，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。通过text-overflow，水平排列的描述列表将会截断左侧太长的短语。在较窄的视口（viewport）内，列表将变为默认堆叠排列的布局方式。
+             </p>
+             <h2>代码输出</h2>
+             <h2>内联代码</h2>
+             <p>在正文中通过<code>&lt;code&gt;</code>标签包裹内联样式的代码片段。</p>
+             <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+             <h2>多行代码输出</h2>
+             <pre class="pre-scrolllable">&lt;p&gt; pre标签识别空格 &lt;/p&gt;</pre>
+             <h2>表格</h2>
+             <table class="table">
+              <thead>
+             	<tr>
+             		<th>Id</th>
+             		<th>Name</th>
+             		<th>Age</th>
+             		<th>Sex</th>
+             	</tr>
+              </thead>
+             	<tr>
+             		<td>1</td>
+             		<td>李四</td>
+             		<td>22</td>
+             		<td>man</td>
+             	</tr>
+             	<tr>
+             		<td>2</td>
+             		<td>李四</td>
+             		<td>22</td>
+             		<td>man</td>
+             	</tr>
+             </table>
+             <h2>条纹表格</h2>
+             <table class="table table-striped">
+               <thead>
+                <tr>
+                	<th>Id</th>
+             		<th>name</th>
+             		<th>age</th>
+             		<th>sex</th>
+             	</tr>
+               </thead>
+             	<tr>
+             		<td>1</td>
+             		<td>李四</td>
+             		<td>22</td>
+             		<td>man</td>
+             	</tr>
+             	<tr>
+             		<td>2</td>
+             		<td>李四</td>
+             		<td>22</td>
+             		<td>man</td>
+             	</tr>
+              </table>
+              <h2>带边框的表格</h2>
+              <table class="table table-bordered">
+              	<thead>
+              		<tr>
+              			<th>Id</th>
+              			<th>Name</th>
+              			<th>Age</th>
+              			<th>Sex</th>
+              		</tr>
+              	</thead>
+              	<tr>
+              		<td>1</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              	<tr>
+              		<td>2</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              </table>
+              <h2>鼠标悬停</h2>
+              <table class="table table-bordered table-hover">
+              	<thead>
+              		<tr>
+              			<th>Id</th>
+              			<th>Name</th>
+              			<th>Age</th>
+              			<th>Sex</th>
+              		</tr>
+              	</thead>
+              	<tr>
+              		<td>1</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              	<tr>
+              		<td>2</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              </table>
+              <h2>紧缩表格</h2>
+              <table class="table table-condensed">
+              	<thead>
+              		<tr>
+              			<th>Id</th>
+              			<th>Name</th>
+              			<th>Age</th>
+              			<th>Sex</th>
+              		</tr>
+              	</thead>
+              	<tr>
+              		<td>1</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              	<tr>
+              		<td>2</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              </table>
+              <h2>响应式表格</h2>
+              <p>必须在table表格以外的div上加table-responsive的类才会响应
+              <div class="table-responsive">
+              <table class="table">
+              	<thead>
+              		<th>Id</th>
+              		<th>Name</th>
+              		<th>Age</th>
+              		<th>Sex</th>
+              		<th>Name</th>
+              		<th>Age</th>
+              		<th>Sex</th>
+              		<th>Name</th>
+              		<th>Age</th>
+              		<th>Sex</th>
+              	</thead>
+              	<tr>
+              		<td>1</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              	<tr>
+              		<td>2</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              		<td>李四</td>
+              		<td>22</td>
+              		<td>man</td>
+              	</tr>
+              </table>
+          </div>
+          <h2>表单</h2>
+          <h2>基本案例</h2>
+          <p>单独的表单控件会被自动赋予一些全局样式。所有设置了<code>.form-control</code>的<code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code>和<code>&lt;select&gt;</code>元素都将被默认设置为<code>width: 100%;</code>。将label和前面提到的这些控件包裹在<code>.form-group</code>中可以获得最好的排列。</p>
+          <form>
+          	<div class="form-group">
+          		<label for="exampleInputEmail1">称呼：</label>
+          	   <input type="email" value="" placeholder="Enter Email" class="form-control" id="exampleInputEmail1"/>
+            </div>
+            <div class="form-group">
+            	<label for="exampleInputPassword">密码：</label>
+          	<input type="password" value="" placeholder="password" class="form-control" id="exampleInputPassword"/>
+          	</div>
+          	<div class="form-group">
+          		<label for="exampleInputFile">文件传输:</label>
+                <input type="file" id="exampleInputFile" />
+          	</div>
+          	<div class="checkbox">
+                <label>
+                 <input type="checkbox"> Check me out
+               </label>
+            </div>
+            <input type="submit" value="Sign in"  class="btn btn-default" />
+
+          </form>
+          <h2>内联表单</h2>
+          <blockquote >
+               <h4 class="text-danger">需要设置宽度</h4>
+               <p>在Bootstrap中，input、select和textarea默认被设置为100%宽度。为了使用内联表单，你需要专门为使用到的表单控件设置宽度。</p>
+          </blockquote>
+          <form role="form" class="form-inline">
+          	<div class="form-group">
+          		<input type="email" placeholder="email" class="form-control"/>
+          	</div>
+          	<div class="form-group">
+          		<input type="password" class="form-control"/>
+          	</div>
+          	<input type="submit" value="Sign in" class="btn btn-default" />
+          </form>
+          <h2>水平排列的表单</h2>
+          <p>用栅格化来设置需要在form加上<code>form-horizontal</code></p>
+          <form role="form" class="form-horizontal">
+            <div class="form-group">
+            	<label for="rol-text" class="col-sm-2">Name</label>
+            	<div class="col-sm-10">
+            	  <input type="text" placeholder="Name" id="rol-text" class="form-control"/>
+            	</div>
+            </div>
+            <div class="form-group">
+            	<label for="rol-pass" class="col-sm-2">Pass</label>
+            	<div class="col-sm-10">
+            	  <input type="password" placeholder="password" id="rol-pass"
+            	class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox col-sm-offset-2 col-sm-10">
+                <label>
+                 <input type="checkbox"> Check me out
+               </label>
+              </div>
+             </div> 
+            <div class="form-group">
+               <div class="submit  col-sm-offset-2 col-sm-10">
+            	  <input type="submit" class="btn btn-default" value="Sign in"/>
+               </div>
+           </div>
+          </form>
+          <h2>被支持的表单</h2>
+          <div class="form-group">
+            <input type="text" placeholder="text" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="tel" class="form-control"/>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <h2>checkbox radio</h2>
+        <div class="checkbox">
+          <label>
+           <input type="checkbox" value="">
+            Option one is this and that&mdash;be sure to include why it's great
+          </label>
+        </div>
+        <div class="radio">
+        	<label>
+        	 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        	  Option one is this and that&mdash;be sure to include why it's great
+        	</label>
+        </div>
+        <div class="radio">		
+        	<label>
+        	 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+        	  Option one is this and that&mdash;be sure to include why it's great
+        	</label>
+        </div>
+        <h2>Inline checkboxes</h2>
+        <label class="checkbox-inline">
+        	<input type="checkbox" value="opction"/>
+        </label>
+        <label class="checkbox-inline">
+        	<input type="checkbox" checked="checked" value="opction2"/>
+        </label>
+        <label class="checkbox-inline">
+        	<input type="checkbox" value="opction3"/>
+        </label>
+       
+       	<h2>Select</h2>
+       	<select class="form-control">
+       		<option>1</option>
+       		<option>2</option>
+       		<option>3</option>
+       		<option>4</option>
+       		<option>5</option>
+       	</select>
+        <br>
+       	<select multiple class="form-control">
+       		<option>1</option>
+       		<option>2</option>
+       		<option>3</option>
+       		<option>4</option>
+       		<option>5</option>
+        </select>
+        <h2>控件状态</h2>
+        <form role="form">
+          <input type="text" class="form-control" value="this is a focused..." id="focusedInput">
+          <p>被禁用的输入框</p>
+          <input type="text" class="form-control" placeholder="disabled"disabled>
+          <div class="form-group">
+            <select disabled id="disabledSelect" class="form-control">
+              <option>Disabled select</option>
+            </select>
+            <h2>校检状态</h2>
+            <p>bootstrap对表单控件的校检状态，如error.warning和success状态，都定义了样式，使用时添加类》<code>.has-warning</code>、<code>.has-error</code>或者<code>.has-success</code>到控件的父元素即可</p>
+            <div class="form-group has-success">
+                <label for="inputSuccess">input with success</label>
+                <input type="text" class="form-control has-error" id="inputSuccess">
+            </div>
+            <div class="form-group has-warning">
+              <label for="warning">警告控件</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group has-error">
+              <label for="error">
+                错误提示
+              </label>
+              <input type="text" class="form-control">
+            </div>
+            <h2>控件尺寸</h2>
+            <p>通过使用<code>.input-lg/md/xs/sm</code>来控制</p>
+            <div class="form-group">
+              <input type="text" class="form-control input-md">
+            </div>
+            <h2>调整列尺寸</h2>
+            <p>栅格系统适合各种元素<code>.col-lg/md/xs-mun</code>
+            <div class="form-group row">
+              <div class="col-xs-5">
+                <input type="text" value="" placeholder=".col-xs-5" class="form-control">
+              </div>
+            </div>
+            <h2>帮助文档</h2>
+            <p>直接另起一行加上<code>.help-block</code></p>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="下面是帮助">
+              <span class="help-block">这是帮助文字</span>
+            </div>
+          </div>
+        </form>
+        <h1>按钮</h1>
+        <h2>选项</h2>
+        <p>在按钮中加入<code>btn-default</code></p>
+        <button type="button" class="btn btn-default">默认</button>
+        <button type="button" class="btn btn-primary">主要</button>
+        <button type="button" class="btn btn-success">成功</button>
+        <button type="button" class="btn btn-warning">警告</button>
+        <button type="button" class="btn btn-danger">危险</button>
+        <button type="button" class="btn btn-link">link</button>
+        <h2>尺寸</h2>
+        <p>调节尺寸使用<code>.btn-lg</code><code>.sm</code><code>xs</code></p>
+        <button type="button" class="btn btn-primary btn-lg">大按钮</button>
+       <button type="button" class="btn btn-primary btn-md">默认按钮</button>
+       <button type="button" class="btn btn-primary btn-sm">小按钮</button>
+       <button type="button" class="btn btn-primary btn-xs">超小按钮</button>
+       <h2>块级元素</h2>
+       <p>添加<code>.btn-block</code>可以使元素和父元素一样100%宽</p>
+       <button type="button" class="btn btn-primary btn-block">块级元素</button>
+       <h2>活动状态</h2>
+       <p>添加<code>.active</code>元素为点击状态</p>
+        <button type="button" class="btn btn-primary active">点击状态</button>
+        <button type="button" class="btn btn-default  active">link</button>
+        <h2>失效按钮</h2>
+        <p>使按钮失效使用<code>disabled="disabled"</code></p>
+        <button type="button" class="btn btn-primary" disabled="disabled">失效按钮</button>
+        <button type="button" class="btn btn-default" disabled="disabled">link按钮</button>
+        <h2>链接元素</h2>
+        <p>链接元素加上<code>disabled="disabled"</code>使链接失效</p>
+        <a href="#" class="btn btn-default disabled" role="button">默认</a>
+        <a href="#" class="btn btn-default disabled" role="button">链接元素</a>
+        <h2>html标签中可做按钮的标签</h2>
+        <a href="#" class="btn btn-primary">a标签</a>
+        <input type="button" class="btn btn-primary btn-md" value="input 按钮">
+        <button type="button" class="btn btn-primary" >button按钮</button>
+        <input type="submit" value="sbmit" class="btn btn-primary">
+        <blockquote>
+             <h3>跨浏览器支持</h3>
+             <p>尽量不使用button,因为在firefox上button的默认高步不一致</p>
+        </blockquote>
+        <h2>图片</h2>
+        <blockquote>
+          <h2>兼容性问题</h2>
+          <p>IE8一下的浏览器版本都不支持圆角</p>
+        </blockquote>
+        <div class="block img-rounded" style="width:140px; height:140px; line-height:140px; background-color:#ccc">
+          .img-rounded
+        </div>
+         <div class="block img-circle" style="width:140px; height:140px; line-height:140px; background-color:#ccc">
+          .img-circle
+        </div>
+        <div class="block img-thumbnail" style="width:140px; height:140px; line-height:140px; background-color:#ccc">
+          .img-thumbnail
+        </div>
+        <h2>工具</h2>
+        <h3>关闭按钮</h3>
+        <p>通过一个象征的关闭图标，可以用来让模式对话框和警告框消失</p>
+        <button type="button" class="close" aria-hidden="true">&times;</button>
+        <h3>下拉按钮</h3>
+        <p>倒三角</p>
+        <span class="caret"></span>
+        <h2>快速设置浮动</h2>
+        <p>通过设置<code>.pull-left</code><code>.pull-right</code></p>
+        <div class="container">
+          <div class="pull-left">
+            pull-left
+          </div>
+          <div class="pull-right">
+            pull-right
+          </div>
+        </div>
+        <blockquote>
+          <h3>不要用于导航栏</h3>
+          <p>导航栏左右浮动请使用<code>.navbar-left</code>和<code>.navnar-right</code></p>
+        </blockquote>
+        <h2>内容区域居中</h2>
+        <div class="center-block">
+          center-block
+        </div>
+        <h2>清除浮动</h2>
+        <p>使用<code>.clearfix</code></p>
+        <div class="clearfix">.clearfix</div>
+        <h2>显示和隐藏</h2>
+        <p>使用<code>.show</code>和<code>.hidden/.sr-only</code>来操作</p>
+        <div class="show">
+          show
+        </div>
+        <div class="hidden">
+          hidden
+        </div>
+        <div class="sr-only">
+          sr-only
+        </div>
+        <h1>响应式工具</h1>
+        <h2>通过使用这些工具class可以根据屏幕和不同的媒体查询显示或者隐藏页面的内容，加速针对移动设备的开发</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+          <thead>
+            <th>效果</th>
+            <th>超小屏幕xs<small>手机(<768px)</small></th>
+            <th>小屏幕sm<small>平板(≥768px)</small></th>
+            <th>中屏幕md<small>桌面(≥992px)</th>
+            <th>大屏幕lg<small>大桌面(≥1200px)</small></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>显示</td>
+              <td><code>.visible-xs</code></td>
+              <td><code>.visible-sm</code></td>
+              <td><code>.visible-md</code></td>
+              <td><code>.visible-lg</code></td>
+            </tr>
+            <tr>
+              <td>隐藏</td>
+              <td><code>.hidden-xs</code></td>
+              <td><code>.hidden-sm</code>
+              </td>
+              <td><code>.hidden-md</code></td>
+              <td><code>.hidden-lg</code>
+              </td>
+            </tr>
+          </tbody>
+         </table>
+       </div>
+       <h2>打印class</h2>
+       <p>针对打印机输出和隐藏打印元素用<code>visible-print</code><code>hidden-print</code></p>
+     </div>
+       	<div class="content-secondary">
+                content-secondary
+       	</div>
+      </div>
+
+ 	</body>
+</html>
